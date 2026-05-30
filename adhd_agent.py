@@ -8,7 +8,7 @@ from tools import task_chunker, motivation_recovery, priority_planner
 # GEMINI API KEY
 # ====================================
 
-os.environ["GOOGLE_API_KEY"] = "AQ.Ab8RN6It0uOsPtXIfLgtaFGBrC8l6Igtnt5FgfiqSTdc0G95Dg"
+os.environ["GOOGLE_API_KEY"] = ""
 
 genai.configure(
     api_key=os.environ["GOOGLE_API_KEY"]
