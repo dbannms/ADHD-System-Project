@@ -1,0 +1,71 @@
+TEST RESULTS
+
+Test Case 1
+
+    Input : I have 5 assignments and don't know where to start.
+
+    Expected Results : The system should prioritize tasks and recommend
+                    focusing on one assignment at a time.
+
+    Actual Result : The system recommended writing down all assignments,
+                    priotizing them and focusing on one assignment first.
+
+    Status : PASS
+
+Test Case 2
+
+    Input : I keep getting distracted every 10 minutes.
+
+    Expected Results : The system should recommended taking a short break
+                        and then returning to the task.
+
+    Actual Result : The system identified distraction, selected the motivation_recovery() procedure
+                    and recommended a short break before resuming work.
+
+    Status : PASS
+
+Test Case 3
+
+    Input : I lost motivation halfway through my work.
+
+    Expected Results : The system should suggest a short break
+                        and restarting with a simple task. 
+
+    Actual Result : The system recommended taking a break and 
+                    resuming work by focusing on one small step.
+
+    Status : PASS
+
+Test Case 4
+
+    Input : I cannot start my assignment.
+
+    Expected Results : The system should break the task into 
+                    smaller and more maanageable steps.
+
+    Actual Result : The system applied task chunking and 
+                    recommended starting with small steps.
+
+    Status : PASS
+
+Test Case 5
+
+    Input : I feel overwhelmed by a large project.
+
+    Expected Results : The system should divide the project into
+                        manageable parts and reduce cognitive overload.
+
+    Actual Result : The system suggested breaking the project into smaller
+                    tasks and focusing on one section at a time.
+
+    Status : PASS
+
+SUMMARY
+
+    Total Test Cases : 5
+    Passed : 5
+    Failed : 0
+    Success Rate : 100%
+    Conclusion : The ADHD Task Management Agent successfully produced
+                recommendations that were consistent with the expert
+                knowledge base for all five test cases.

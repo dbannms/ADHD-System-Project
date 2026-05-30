@@ -1,0 +1,37 @@
+Test Case 1:
+I have 5 assignments and don't know where to start.
+
+Expected:
+Prioritize tasks and focus on one assignment.
+
+--------------------------------
+
+Test Case 2:
+I keep getting distracted every 10 minutes.
+
+Expected:
+Recommend a short break and then return.
+
+--------------------------------
+
+Test Case 3:
+I lost motivation halfway through my work.
+
+Expected:
+Recommend a short break and restarting with one simple step.
+
+--------------------------------
+
+Test Case 4:
+I cannot start my assignment.
+
+Expected:
+Break the assignment into small steps.
+
+--------------------------------
+
+Test Case 5:
+I feel overwhelmed by a large project.
+
+Expected:
+Divide the project into manageable tasks.

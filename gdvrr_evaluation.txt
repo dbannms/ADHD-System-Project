@@ -1,0 +1,71 @@
+GDVRR ANALYSIS (CASE 2)
+
+User Input : "I keep getting distracted every 10 minutes."
+
+G (GOAL) : 
+            
+    The goal of the AI agent is to assist a user who experiences frequent 
+    distraction while completing tasks. The system should provide ADHD 
+    friendly guidance based on expert knowledge and help the user regain focus 
+    and continue working effectively.
+
+D (DECONSTRUCT) : 
+
+    AI Execution Trace :
+
+    THOUGHT : User is experiencing frequent distraction.
+
+    RULE MATCH : distracted
+
+    ACTION : motivation_recovery()
+
+    FINAL RESPONSE : The AI recommended taking a short break, relaxing briefly
+                    and returning to the task by focusing on one small step 
+                    at a time.
+
+    Analysis : The AI first identified the user's problem as distraction. 
+                It then matched the situation to the expert rule labelled 
+                "distracted" and selected the motivation_recovery() procedure. 
+                Finally, it generated recommendations designed to help the user 
+                regain focus.
+
+V (VERIFY) : 
+
+    Human Expert Rule : " If the user becomes distracted, allow break and
+                        then redirect attention back to the task."
+
+    Verification Result : The AI response follows the expert rule because it
+                            recommends taking a short break and then returning to 
+                            the task. The recommendations are consistent with the 
+                            knowledge provided by the human expert during the interview.
+
+    KBS Anomaly Analysis : Procedural Routing Failure
+
+                            Although the AI selected the correct procedural tool, the 
+                            tool output was not clearly seprated from the AI geenrated 
+                            recommendations. This makes it difficult to verify whether
+                            the tool was actually executed or whether the response was
+                            generated solely by the language model.
+
+R (REWRITE) :
+
+    Original Behaviour : The AI generated recommendations after identifying the user'selected
+                        distraction problem.
+    
+    Improved Behaviour : The system should display the motivation_recovery() tool output
+                        before generating the final response. 
+
+    Prompt Improvement : "CRITICAL : When distraction is detected, the system must execute and
+                        display the motivation_recovery() tool output before generating recommendations."
+
+    Reason for Rewrite : This change improves transparency, allows easier auditing and ensures
+                        the expert designed procedure is visible to the user. 
+
+R (REFLECT) :
+
+    This evaluation demonstrates the importance of human verfication when using AI
+    systems. Although the AI produced a helpful and correct response, the reasoning
+    process was not fully transparent. Human review was necessary to confirm that the
+    response followed the expert's rule rather than relying only on probabilistic text
+    generation. By making procedural tool execution more visible, the system becomes
+    more trustworthy, explainable and aligned with expert knowledge. 
